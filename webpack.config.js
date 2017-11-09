@@ -6,10 +6,10 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.[hash].js'
   },
   plugins: [
-    new ExtractTextWebpackPlugin('style.bundle.css')
+    new ExtractTextWebpackPlugin('style.bundle.[contenthash].css')
   ],
   module: {
     rules: [
