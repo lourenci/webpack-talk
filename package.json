@@ -5,6 +5,9 @@
   "repository": "git@github.com:lourenci/webpack-talk.git",
   "author": "Leandro Lourenci <leandro@lourenci.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
   "devDependencies": {
     "webpack": "^3.8.1"
   }

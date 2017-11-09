@@ -1,3 +1,5 @@
+import CloudMapParser from './js/CloudMapParser'
+
 document.getElementById('solve-it').addEventListener('click', solve)
 
 function solve () {
