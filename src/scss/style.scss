@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+  width: 100%;
+
+  .column {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+    p {
+      text-align: left;
+    }
+  }
+}
