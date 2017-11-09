@@ -4,7 +4,7 @@ const AIRPORT = 'A'
 const cloneArray = (array) => array.map(value => value.slice())
 const flattenArray = (array) => array.reduce((flat, value) => flat.concat(value), [])
 
-export default class CloudMap {
+class CloudMap {
   constructor (values) {
     this.validateCloudMapValues(values)
 

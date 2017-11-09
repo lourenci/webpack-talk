@@ -1,6 +1,4 @@
-import CloudMap from './CloudMap'
-
-export default class CloudMapParser {
+class CloudMapParser {
   constructor (text) {
     this.text = text
   }
