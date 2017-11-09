@@ -1,6 +1,7 @@
 const path = require('path')
 
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const config = {
   entry: './src/index.js',
@@ -9,7 +10,10 @@ const config = {
     filename: 'app.bundle.[hash].js'
   },
   plugins: [
-    new ExtractTextWebpackPlugin('style.bundle.[contenthash].css')
+    new ExtractTextWebpackPlugin('style.bundle.[contenthash].css'),
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    })
   ],
   module: {
     rules: [
