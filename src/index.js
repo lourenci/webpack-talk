@@ -1,12 +1,13 @@
-document.getElementById('solve-it').addEventListener('click', solve)
+const parser = CloudMapParser
+document.getElementById('solve-it').addEventListener('click', () => solveUsingParser(parser))
 
-function solve () {
+function solveUsingParser (Parser) {
   const mapInputValue = document.getElementById('mapInput').value
   if (mapInputValue.length === 0) {
     return
   }
 
-  const parser = new CloudMapParser(mapInputValue)
+  const parser = new Parser(mapInputValue)
   try {
     const map = parser.toCloudMap()
 
